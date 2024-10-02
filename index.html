@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="escalerasSerpientes.js" async></script>
+    <title>Escaleras y Serpientes</title>
+
+</head>
+<body>
+  <h1>Jugando Escaleras y Serpientes</h1>
+  <div class="game-container">
+      <div id="board" class="board"></div>
+      <div class="controls">
+          <img id="rollDice" src="Images/dice1.jpg" alt="Tirar dado" class="dice-button">
+          <p id="diceResult">Resultado del Dado: </p>
+          <p id="playerTurn">Turno del jugador 1</p>
+          <p id="playerPosition1">Posición Jugador 1: 1</p>
+          <p id="playerPosition2">Posición Jugador 2: 1</p>
+      </div>
+  </div>
+
+  <div id="winnerPopup" class="winner-popup">
+      <img src="Images/winner.png" alt="¡Winner!" id="winnerImage">
+      <button id="closePopup">Cerrar</button>
+  </div>
+
+</body>
+
+</html>
+
+

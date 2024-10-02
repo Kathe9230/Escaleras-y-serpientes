@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(250, 231, 231);
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    grid-template-rows: repeat(10, 60px);
+    border: 2px solid #333;
+  }
+  
+  .board div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cfb74d;
+    font-size: 20px;
+  }
+
+  .winner-popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(216, 201, 201);
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 40px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.winner-popup img {
+    max-width:500px;
+    
+}
+
+.winner-popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.start-img, .finish-img {
+  width: 200px;   
+  height: 50px;  
+  
+}
+
+.player-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .board .even {
+    background-color: rgb(204, 163, 228);
+  }
+  
+  .board .odd {
+    background-color: #15c2b4;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .dice-button {
+    width: 100px; 
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .dice-button:active {
+    transform: scale(0.9); 
+  }
+  
+  .board .ladder {
+    background-image: url('ladder.jpg'); 
+    background-size: cover;
+    
+  }
+  
+  .board .snake {
+    background-image: url('snake.avif'); 
+    background-size: cover;
+    color: white;
+  }
+  
